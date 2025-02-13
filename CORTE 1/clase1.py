@@ -11,9 +11,16 @@ pais = input("Ingrese el pais: ")
 if pais in paises:
     print(paises[pais])
 else:
-    print("Valor erroneo")
+    print("El pais no esta")
 
-
+'''Second Version'''
+paises = {
+    "Francia": "Paris",
+    "Alemania": "Berlin",
+    "Italia": "Roma"
+}
+pais = input("Ingrese el pais: ").title()
+print(paises.get(pais, "El pais no esta"))
 
 '''Programa que solicita al usuario información sobre un producto (nombre, precio, cantidad) y la almacena en un diccionario.
  Después debe mostrar el mensaje "El producto <nombre> tiene un precio de <precio> y hay <cantidad> unidades en stock".'''
